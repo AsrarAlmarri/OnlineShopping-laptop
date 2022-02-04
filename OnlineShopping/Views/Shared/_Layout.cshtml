@@ -47,7 +47,7 @@
                 <div class="nav-menus">
 
                     <ul class="nav nav-pills">
-                        <li class="active"><a style="border-radius:initial;" href="#">Home</a></li>
+                        <li  class="active"><a style="border-radius:initial;" href="#">Home</a></li>
                         <li><a style="border-radius:initial;" href="#">Location</a></li>
                         <li><a style="border-radius:initial;" href="#">About</a></li>
                     </ul>
@@ -56,10 +56,27 @@
 
         </div>
 
+
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <div class="row">
+                <div class="col-md-12 copyright">
+
+                    <div class="col-md-6 col-sm-6 copyright-left">
+                        <p>&copy; @DateTime.Now.Year - OnlineShopingStore. All right reserved.</p>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 copyright-right">
+
+                        <ul class="list-unstyled list-social"
+                            <li><a href="https://github.com/AsrarAlmarri" target="_blank"><i class="fa fa-github"></i></a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
         </footer>
     </div>
 
